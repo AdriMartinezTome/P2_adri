@@ -1,0 +1,156 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pojecte2</title>
+    <script>
+      var slideIndex = 1;
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    
+<link rel="stylesheet" type="text/css" href="estils.css">
+</head>
+<body onload="showSlides(slideIndex)">
+    <div class="center">
+        <div class="divheader">
+            <a href="index.html"><img style="float:left;height:100px;width:230px" src="imatges/logo.png" alt="logo"></a>
+        <div class="inputheader">
+            <input class="input1" type="text" name="search" placeholder="Cerca aquí">
+            <img style="margin-left:150px;width:110px;height:70px;margin-top:10px;border: 1px solid black;border-radius: 5px;" src="imatges/usuario.jfif" />
+            <span style="font-size:15px;margin-left:30px;margin-top:30px;"><i class="fa fa-drivers-license-o" style="font-size:36px;margin-right:5px;"></i>Adrià</span>
+            <div>
+                <ul id="menu">
+                    <li><div style="margin-top:8px;"><i class="fa fa-home" style="font-size:15px;color:white"></i>INICIAR SESIÓ</div></li>
+                    <li><div style="margin-top:8px;">REGISTRARSE</div></li>
+                </ul>
+            </div>
+            
+     </div>                 
+    </div>
+        <div class="div2">
+            <ul id="seccions">
+		<li>Restaurants</li>
+		<li>Art </li>
+		<li>Música</li>
+		<li>Espectacles</li>
+		<li>Notícies</li>
+		<li>Què fer</li>
+                <li style="width:108px;">Més</li>
+            </ul>
+                </div>
+    <div class="principal">
+        <h3 class="ppostwapo">Visitas guiadas y billetes o entradas de Formula Tours</h3>
+        <br>
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="imatges/c1.jfif" style="width:300px;height:200px;">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="imatges/c2.jfif" style="width:300px;height:200px;">
+
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="imatges/c3.jfif" style="width:300px;height:200px;">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+        
+        <h4 style="margin-top:50px;margin-left:150px;">Resumen</h4>
+       
+        <p style="margin-left:150px;margin-top:30px;margin-right:100px;">Descubra Mallorca de una forma muy diferente. Una experiencia única 
+            en forma de visitas guiadas con nuestros coches de fórmula. Imagine 
+            una excursión disfrutando del increíble paisaje de Mallorca en nuestros 
+            vehículos tan singulares y poco vistos en Europa. Le invitamos a realizar 
+            la excursión acompañado de nuestro guía profesional en nuestros coches de 
+            tres ruedas.Nuestras excursiones:La excursión n° 1 pasará por la costa de 
+            Cavia primero y luego en dirección de las montañas de Estellenc donde podremos 
+            disfrutar de las hermosas vistas y la conducción en las curvas. La principal 
+            parada es en el mirador de Estellencs.La excursión n° 2 se irá por la costa 
+            de Calvia pasando todos los pueblos y regresando al puerto Andratx. Eso implica 
+            una duración de 2,5 horas.La excursión al atardecer: comenzamos una vez a la 
+            semana con el mismo recorrido de la excursión n° 2 pero haciendo una parada para 
+            ver el atardecer en el puerto de Andratx.La excursión n° 4 pasará al mirador de 
+            Sa Foradada yendo por Valdemossa y Soller, las dos famosas ciudades de Mallorca.
+            Elija una de nuestras opciones y no se pierda esta experiencia única en la isla.</p>
+        <h4 style="margin-top:100px;margin-left:150px;">Acerca de Formula Tours</h4>
+        <p style="margin-left:150px;margin-top:30px;margin-right:100px;">Formula Tours es una empresa 
+            joven, creada con la idea de introducir algo nuevo y aún poco visto en el mercado europeo.
+            Queremos mostrar al público nuestro FORMULA CARS con tres ruedas y esperamos que nuestros 
+            clientes disfruten de las visitas guiadas en estos coches en la isla de Mallorca. Os 
+            organizamos dos tours diferentes, uno más corto, de 2,5 horas, visitando Porto de Andratx, 
+            Palma, Porto Portals y otro más largo, 4,5 horas, lo que hace un círculo hasta Estellenc y
+            de vuelta en el coste sureste de Mallorca.</p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       </div>
+       
+   
+        <div class="footer">
+            <img style="float:left;height:100px;width:200px;margin-left:50px;margin-top:50px;" src="imatges/logo.png" alt="logo">
+            <div class="divsfooter">
+                <ul>
+                    <li>CONDICIONES<i class="fa fa-exclamation-circle"></i></li>
+                    <li>Política de privacidad</li>
+                    <li>Aviso legal</li>
+                    <li>Condiciones de</li>
+                    <li>contratación</li>
+                    <li>Política de cookies<i class="fa fa-file-o" style="font-size:24px;margin-left:5px;color:white"></i></li>
+                </ul>
+            </div>
+                <div style="margin-left:120px;margin-top:30px;">
+				<p>Segueix-nos!<i class="fa fa-th-large" style="font-size:20px;color:white;margin-left:5px"></i></p>
+                <span class="sprite fb"></span>
+                <span class="sprite ig"></span><br>
+                <span class="sprite tw"></span>
+		<span class="sprite in"></span>
+		</div>
+            
+           
+         
+           
+        </div>
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,252 @@
+<html>
+<head>
+  
+    <title>Pojecte2</title>
+    <script>
+        function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+        </script>
+    <link rel="stylesheet" type="text/css" href="estils.css">
+</head>
+<body>
+    <div class="center">
+        <div class="divheader">
+            <a href="index.html"><img style="float:left;height:100px;width:230px" src="imatges/logo.png" alt="logo"></a>
+        <div class="inputheader">
+            <input class="input1" type="text" name="search" placeholder="Cerca aquí">
+            <img style="margin-left:150px;width:110px;height:70px;margin-top:10px;border: 1px solid black;border-radius: 5px;" src="imatges/usuario.jfif" />
+            <span style="font-size:15px;margin-left:30px;margin-top:30px;">Adrià Martínez</span>
+            <div style='margin-top:25px'>
+                
+                    <div style="margin-top:8px;"><button class="open-button" onclick="openForm()">Iniciar sesió</button></div>
+                    <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Iniciar sesió</h3>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Introdueix el teu email" name="email" required>
+
+    <label for="psw"><b>Contrasenya</b></label>
+    <input type="password" placeholder="Introdueix la teva contrasenya" name="psw" required>
+
+    <button type="submit" class="btn">Iniciar sesió</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Tanca</button>
+  </form>
+</div>
+                    <div style="margin-top:8px;"><button onclick="">Registrarse</button></div>
+                
+            </div>
+            
+     </div>                 
+    </div>
+        <div class="div2">
+            <ul id="seccions">
+		<li>Restaurants</li>
+		<li>Art </li>
+		<li>Música</li>
+		<li>Espectacles</li>
+		<li>Notícies</li>
+		<li>Què fer</li>
+                <li style="width:108px;">Més</li>
+            </ul>
+                </div>
+    <div class="principal">
+        <img class="imgguapo" src="imatges/hitler.jpg">
+        <h3 class="ppostwapo">Notícies del dia</h3>
+        <input style="margin-top:52px;margin-left:450px;" type="button" value="Llegir més">
+        <hr width=700 size="4">
+        <div>
+        <div class="divsnoticies"><img class="imatgesnot" src="imatges/rivera.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Las claves por las que 2,5 millones de personas han dejado de votar a Ciudadanos</h5>
+       </div>
+        <div class="divsnoticies"><img class="imatgesnot" src="imatges/rodry.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Noticia DC: todas las razones de Zidane para dejar fuera a Rodrygo</h5></div>
+        <div class="divsnoticies"><img class="imatgesnot" src="imatges/arbolitos.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Acaba el laboratorio de innovación ciudadana: 12 días por el medio ambiente</h5></div>
+        <div class="divsnoticies"><img style="width:350px;height:100px;padding-bottom: 5px;margin-right:10px;" src="imatges/mani.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>La renuncia de Morales y su gobierno sume a Bolivia en el vacío institucional entre acusaciones de golpe de Estado</h5></div>
+        </div>
+        <br>
+        <h3 class="h3noticies2">Què fer a Mallorca</h3>
+        <input style="margin-top:32px;margin-left:420px;" type="button" value="Llegir més">
+        <hr width=700 size="4">
+        <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/formula.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Explore Mallorca con su propio vehículo de fórmula 1 a partir de este mes</h5>
+            <a href="event.html"><input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més"></a>
+       </div>
+        <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/catedral.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Explore la catedrall de mallorca por tan sólo 10 euros</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+        
+        <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/castillo.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Excursión por el castillo de Bellver cada fin de semana de este mes</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+       
+    </div>
+        <div class="principal2">
+            <h3 class="h3noticies2">Et recomenam</h3>
+            <input style="margin-top:32px;margin-left:280px;" type="button" value="Llegir més"><br>
+            <div style="margin-right:0px;">
+               <div  style="margin-right:170px;">
+            <hr width="530" size="4">
+               </div>
+           
+           
+        <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/lorenzo.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Jorge Lorenzo será 'Leyenda de MotoGP' en el Gran Premio de España de 2020</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+                <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/pique.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>En Cartagena sí quieren a Piqué: se fue ovacionado</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+                </div>
+            <div class="divsspam"><img src="imatges/spam1.jfif">
+                </div>
+            
+               
+                
+                <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/justino.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Justin Bieber será Cupido en una película de animación</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+            
+                <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/pablito.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Pablo Iglesias, el improbable ganador de la repetición electoral</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+                <div class="divsspam"><img src="imatges/spam2.jfif">
+                </div>
+                
+            
+           
+                
+       
+       
+            </div>
+            </div>
+        <div class="principal3">
+            <br>
+            <h2 align='center'>Calendari d'esdeveniments</h2>
+            <br>
+            <div class="calendari">
+            <div class="month">      
+
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+     Novembre<br>
+      <span style="font-size:18px">2019</span>
+    </li>
+  </ul>
+
+</div>
+
+<ul class="weekdays">
+  <li>DL</li>
+  <li>DM</li>
+  <li>DX</li>
+  <li>DJ</li>
+  <li>DV</li>
+  <li>DS</li>
+  <li>DG</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active"><a href="event2.html">10</a></span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</div>
+             <h3 class="h3noticies2" style='margin-top:50px;'>Compra entrades</h3>
+        <input style="margin-top:62px;margin-left:420px;" type="button" value="Llegir més">
+        <hr width=700 size="4">
+       <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/bb.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Entrades per al concert d'en bad bunny ja a la venta</h5>
+            <a href="entradas.html"><input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més"></a>
+       </div>
+        <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/tomeu.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>La gira d'en Tomeu Penya comença día 24!!!</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+        
+        <div class="divsnoticies2"><img class="imatgesnot2" src="imatges/mallorca.jfif">
+            <h5 style='margin-left:10px;margin-right:10px'>Mallorca vs Real Madrid.Només 400 entrades restants</h5>
+            <input style="display:block;margin:auto;margin-top:30px;" type="button" value="Llegir més">
+       </div>
+        
+        <div style="padding-top:400px">
+        <h3 align="center">Descobreix Mallorca amb les nostres notícies diaries!!!</h3>
+        </div>
+        <img class="imgguapo" src="imatges/catedral1.jfif">
+        <div style="padding-top:50px">
+        <h2 align="center">NEXSLETTER</h2>
+        <h5 align="center">No et perdis les últimes notícies i nova informació diaria</h5>
+        <input class="input2" type="text" name="search" placeholder="Introdueix el teu email">
+        </div>
+            
+        
+        </div>
+        <div class="footer">
+            <img style="float:left;height:100px;width:200px;margin-left:50px;margin-top:50px;" src="imatges/logo.png" alt="logo">
+            <div class="divsfooter">
+                <ul>
+                    <li>CONDICIONES</li>
+                    <li>Política de privacidad</li>
+                    <li>Aviso legal</li>
+                    <li>Condiciones de</li>
+                    <li>contratación</li>
+                    <li>Política de cookies</li>
+                </ul>
+            </div>
+                <div style="margin-left:120px;margin-top:30px;">
+				<p>Segueix-nos!!!</p>
+                <span class="sprite fb"></span>
+                <span class="sprite ig"></span><br>
+                <span class="sprite tw"></span>
+		<span class="sprite in"></span>
+		</div>
+            
+           
+         
+           
+        </div>
+    </div>
+        
+</body>
+</html>

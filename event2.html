@@ -1,0 +1,156 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pojecte2</title>
+    <script>
+      var slideIndex = 1;
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    
+<link rel="stylesheet" type="text/css" href="estils.css">
+</head>
+<body onload="showSlides(slideIndex)">
+    <div class="center">
+        <div class="divheader">
+            <a href="index.html"><img style="float:left;height:100px;width:230px" src="imatges/logo.png" alt="logo"></a>
+        <div class="inputheader">
+            <input class="input1" type="text" name="search" placeholder="Cerca aquí">
+            <img style="margin-left:150px;width:110px;height:70px;margin-top:10px;border: 1px solid black;border-radius: 5px;" src="imatges/usuario.jfif" />
+            <span style="font-size:15px;margin-left:30px;margin-top:30px;"><i class="fa fa-drivers-license-o" style="font-size:36px;margin-right:5px;"></i>Adrià</span>
+            <div>
+                <ul id="menu">
+                    <li><div style="margin-top:8px;"><i class="fa fa-home" style="font-size:15px;color:white"></i>INICIAR SESIÓ</div></li>
+                    <li><div style="margin-top:8px;">REGISTRARSE</div></li>
+                </ul>
+            </div>
+            
+     </div>                 
+    </div>
+        <div class="div2">
+            <ul id="seccions">
+		<li>Restaurants</li>
+		<li>Art </li>
+		<li>Música</li>
+		<li>Espectacles</li>
+		<li>Notícies</li>
+		<li>Què fer</li>
+                <li style="width:108px;">Més</li>
+            </ul>
+                </div>
+    <div class="principal">
+        <h3 class="ppostwapo">Real Madrid vs Real Sociedad Vinicius es baja frente a la Real</h3>
+        <br>
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="imatges/v1.jfif" style="width:300px;height:200px;">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="imatges/v2.jfif" style="width:300px;height:200px;">
+
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="imatges/v3.jfif" style="width:300px;height:200px;">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+        
+        <h4 style="margin-top:50px;margin-left:150px;">El Santiago Bernabéu 'le pesa' a Vinícius</h4>
+       
+        <p style="margin-left:150px;margin-top:30px;margin-right:100px;">Vinícius Jr se ha vuelto a 
+            quedar fuera de la convocatoria de Zinedine Zidane para un partido en el Santiago Bernabéu.
+            Es la cuarta vez que no está la lista del Madrid (Granada, Leganés y Galatasaray y ahora Real
+            Sociedad), todas cuando los blancos han jugado en su 'templo'.En total, Vinícius ha disputado
+            11 partidos y se ha perdido seis encuentros con el próximo ante el conjunto vasco. Las otras 
+            dos veces que fue convocado pero no terminó jugando fue ante Atlético de Madrid y Sevilla, 
+            en estadios, a priori, más complicados.La eclosión de Rodrygo (cinco goles en seis partidos)
+            es una de las principales razones para que 'Vini' haya pasado a un segundo plano. El 'Rayo' 
+            parece haberle adelantado por la derecha a su compatriota en el duelo por ser una variante 
+            ofensiva en el esquema de Zidane. También ocurre en la selección brasileña, donde Tite ha 
+            decido convocar a Rodrygo por primera vez para los partidos ante Argentina y Corea del Sur,
+            mientras que el '25' blanco se ha quedado en casa.</p>
+        
+        <img class="imgguapo2" src="imatges/v4.jfif">
+        
+        <p style="margin-left:150px;margin-top:30px;margin-right:100px;">En estas dos semanas de selecciones 
+            Vinícius ha demostrado su compromiso con el equipo merengue, quedándose en Madrid, y yendo a ejercitarse 
+            a Valdebebas bajo las órdenes del técnico francés. Es por eso que quizás se esperaba que entrase en la
+            convocatoria, y que incluso tuviese algunos minutos esta jornada.La actitud que ha demostrado el 
+            'menino' durante el parón internacional, sumado a la lesión de Lucas Vázquez, y la polémica de 
+            Gareth Bale con la bandera de Gales hacen que el partido ante la Real Sociedad del próximo sábado 
+            fuera un escenario ideal para volver a ver al joven brasileño cabalgando la banda del Santiago Bernabéu.
+            Pero Zidane no lo ha considerado así. ¿Qué pasa con Vinícius?</p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       </div>
+       
+   
+        <div class="footer">
+            <img style="float:left;height:100px;width:200px;margin-left:50px;margin-top:50px;" src="imatges/logo.png" alt="logo">
+            <div class="divsfooter">
+                <ul>
+                    <li>CONDICIONES<i class="fa fa-exclamation-circle"></i></li>
+                    <li>Política de privacidad</li>
+                    <li>Aviso legal</li>
+                    <li>Condiciones de</li>
+                    <li>contratación</li>
+                    <li>Política de cookies<i class="fa fa-file-o" style="font-size:24px;margin-left:5px;color:white"></i></li>
+                </ul>
+            </div>
+                <div style="margin-left:120px;margin-top:30px;">
+				<p>Segueix-nos!<i class="fa fa-th-large" style="font-size:20px;color:white;margin-left:5px"></i></p>
+                <span class="sprite fb"></span>
+                <span class="sprite ig"></span><br>
+                <span class="sprite tw"></span>
+		<span class="sprite in"></span>
+		</div>
+            
+           
+         
+           
+        </div>
+    </div>
+        
+</body>
+</html>
